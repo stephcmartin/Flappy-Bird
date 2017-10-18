@@ -11,6 +11,10 @@ function draw() {
   background(51)
   bird.update()
   bird.show()
+
+  if (frameCount % 80 == 0){ //Create Frequeny of Pipe
+pipes.push(new Pipe())
+  }
   for (i = 0; i < pipes.length; i++){
     pipes[i].show()
     pipes[i].update()
