@@ -10,3 +10,9 @@ function draw() {
   bird.update()
   bird.show()
 }
+// When user presses space bar it moves the bird
+function keyPressed(){
+if (key == ' ') {
+bird.up()
+}
+}
